@@ -81,12 +81,7 @@ body {
   -webkit-animation: blooming-leaf-left var(--fl-speed) 2s backwards;
           animation: blooming-leaf-left var(--fl-speed) 2s backwards;
 }
-.flower--2 {
-  left: 50%;
-  transform: rotate(20deg);
-  -webkit-animation: moving-flower-2 4s linear infinite;
-          animation: moving-flower-2 4s linear infinite;
-}
+
 .flower--2 .flower__line {
   height: 60vmin;
   -webkit-animation-delay: 0.6s;
@@ -151,6 +146,66 @@ body {
   -webkit-animation-delay: 1.7s;
           animation-delay: 1.7s;
 }
+
+/* ALTERAÇÃOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+ 
+.flower--4 {
+  height: 50vmin;/* Posição horizontal no centro */
+  bottom: 10vmin; /* Ajuste para corresponder à posição das outras flores */
+  position: absolute;
+  transform-origin: bottom center;
+  z-index: 10;
+  --fl-speed: 0.3s;
+  transform: rotate(20deg); /* Inclinação semelhante às outras flores */
+}
+
+.flower--4 .flower__line {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.flower--4 .flower__line__leaf--1 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 2.5s backwards;
+          animation: blooming-leaf-right var(--fl-speed) 2.5s backwards;
+}
+.flower--4 .flower__line__leaf--2 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 2.3s backwards;
+          animation: blooming-leaf-right var(--fl-speed) 2.3s backwards;
+}
+.flower--4 .flower__line__leaf--3 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 2.1s backwards;
+          animation: blooming-leaf-left var(--fl-speed) 2.1s backwards;
+}
+.flower--4 .flower__line__leaf--4 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
+          animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
+}
+
+.flower--5{
+  left: 40%;
+  transform: rotate(15deg); /* Girar a flor para a direita */
+  -webkit-animation: moving-flower-3 4s linear infinite;
+          animation: moving-flower-3 4s linear infinite;
+}
+
+
+.flower--6 {
+  left: 40%;
+  transform: rotate(15deg); /* Girar a flor para a direita */
+  -webkit-animation: moving-flower-3 4s linear infinite;
+          animation: moving-flower-3 4s linear infinite;
+}
+
+
+.flower--7 {
+  left: 58%; /* Posição horizontal no centro */
+  bottom: 10vmin; /* Ajuste para corresponder à posição das outras flores */
+  position: absolute;
+  transform-origin: bottom center;
+  z-index: 10;
+  --fl-speed: 0.3s;
+  transform: rotate(20deg); /* Inclinação semelhante às outras flores */
+}
+
 .flower__leafs::after {
   content: "";
   position: absolute;
